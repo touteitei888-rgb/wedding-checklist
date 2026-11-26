@@ -161,8 +161,9 @@ h1 {
   box-shadow:var(--shadow);
   transition:.2s}
 .card.purchased {
-  background:#f1f3f4;
-  border-color:#e0e3e7;
+  background:#eef9f1;
+  border-color:#bfe3cb;
+  border-left:3px solid #57bd89;
   box-shadow:none}
 .title {
   font-size:18px;
@@ -183,8 +184,8 @@ h1 {
   padding:5px 10px;
   color:#1967d2}
 .card.purchased .tag {
-  background:#e8eaed;
-  color:#5f6368}
+  background:#dcf3e3;
+  color:#1f7a3f}
 .note {
   margin:14px 0 0;
   font-size:14px;
@@ -193,7 +194,7 @@ h1 {
   white-space:pre-wrap;
   overflow-wrap:anywhere}
 .card.purchased .title,.card.purchased .note {
-  color:#70757a}
+  color:#2d6a45}
 .cardActions {
   display:flex;
   align-items:center;
@@ -214,9 +215,10 @@ h1 {
   border-color:transparent;
   color:#1967d2}
 .state.paid.on {
-  background:#e0e3e7;
+  background:#cdebd8;
   border-color:transparent;
-  color:#5f6368}
+  color:#1a7a3f;
+  font-weight:600}
 .spacer {
   flex:1}
 
