@@ -168,6 +168,14 @@ h1 {
 .card.selected .tag {
   background:#e3eefc;
   color:#1967d2}
+.card.hotel {
+  background:#f7f4ff;
+  border-color:#d6c9f7;
+  border-left:3px solid #8b6ce0;
+  box-shadow:none}
+.card.hotel .tag {
+  background:#ece4fb;
+  color:#6d3fbf}
 .card.purchased {
   background:#eef9f1;
   border-color:#bfe3cb;
@@ -222,6 +230,11 @@ h1 {
   background:#e8f0fe;
   border-color:transparent;
   color:#1967d2}
+.state.hotel.on {
+  background:#ece4fb;
+  border-color:transparent;
+  color:#6d3fbf;
+  font-weight:600}
 .state.paid.on {
   background:#cdebd8;
   border-color:transparent;

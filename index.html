@@ -10,17 +10,17 @@
 <header class="hero"><div><p class="eyebrow">WEDDING CHECKLIST</p><h1>婚礼用品清单</h1><p class="sub">新郎 · 新娘 · 典礼，41 项原始清单已整理。</p></div>
 <div class="actions"><button class="btn" id="importBtn">导入 Excel</button><button class="btn" id="backupBtn">导出备份</button><button class="btn primary" id="addBtn">＋ 添加物品</button><input class="hidden" id="fileInput" type="file" accept=".xlsx,.xlsm,.csv,.json"></div></header>
 <section class="metrics"><div class="metric"><span>清单物品</span><strong id="total">0</strong></div><div class="metric"><span>已选定</span><strong id="selectedTotal">0</strong></div><div class="metric"><span>已购买</span><strong id="paidTotal">0</strong></div></section>
-<section class="toolbar"><label class="search"><input id="search" type="search" placeholder="搜索物品、分类或备注"></label><select class="select" id="category"><option value="">所有分类</option></select><select class="select" id="status"><option value="all">全部状态</option><option value="selected">已选定</option><option value="unselected">未选定</option><option value="purchased">已购买</option><option value="unpaid">待购买</option></select></section>
+<section class="toolbar"><label class="search"><input id="search" type="search" placeholder="搜索物品、分类或备注"></label><select class="select" id="category"><option value="">所有分类</option></select><select class="select" id="status"><option value="all">全部状态</option><option value="selected">已选定</option><option value="unselected">未选定</option><option value="purchased">已购买</option><option value="unpaid">待购买</option><option value="hotel">酒店提供</option></select></section>
 <nav class="tabs"><button class="tab active" data-view="all">全部</button><button class="tab" data-view="selected">已选定</button><button class="tab" data-view="purchased">已购买</button><button class="tab" data-view="unpaid">待购买</button></nav>
 <section class="list" id="list"></section><footer class="footer"><span>修改会自动保存在当前浏览器</span><span>建议定期导出备份，换设备时可再导入</span></footer>
 </main>
 <dialog id="dialog"><form class="modal" id="form"><div class="modalHead"><h2 id="dialogTitle">添加物品</h2><button type="button" class="close" id="close">×</button></div>
 <div class="formGrid">
 <div class="field full"><label for="name">物品名称 *</label><input id="name" required maxlength="120" placeholder="输入物品名称"></div>
-<div class="field"><label for="cat">分类</label><input id="cat" maxlength="80" placeholder="例如：出行"></div><div class="field"><label for="qty">数量</label><input id="qty" maxlength="40" placeholder="例如：2"></div>
+<div class="field"><label for="cat">分类</label><input id="cat" maxlength="80" placeholder="可自己输入新分类，如：酒店提供"></div><div class="field"><label for="qty">数量</label><input id="qty" maxlength="40" placeholder="例如：2"></div>
 <div class="field"><label for="unit">单位</label><input id="unit" maxlength="30" placeholder="例如：个"></div><div class="field"><label for="price">预算 / 价格</label><input id="price" maxlength="40" placeholder="可留空"></div>
 <div class="field full"><label for="note">备注</label><textarea id="note" maxlength="1200" placeholder="规格、购买渠道或其他说明"></textarea></div><div class="field full"><label for="extra">其他原表信息（可继续编辑）</label><textarea id="extra" placeholder="表格中的其他列会保留在这里"></textarea></div>
-<div class="field"><label><input id="chosen" type="checkbox"> 已选定</label></div><div class="field"><label><input id="bought" type="checkbox"> 已购买</label></div>
+<div class="field"><label><input id="chosen" type="checkbox"> 已选定</label></div><div class="field"><label><input id="bought" type="checkbox"> 已购买</label></div><div class="field"><label><input id="hotel" type="checkbox"> 酒店提供</label></div>
 </div><div class="modalFoot"><button type="button" class="btn" id="cancel">取消</button><button type="submit" class="btn primary">保存</button></div></form></dialog><div class="toast" id="toast"></div>
 <script src="data.js"></script>
 <script src="app.js"></script>
