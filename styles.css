@@ -160,6 +160,14 @@ h1 {
   padding:20px 21px 17px;
   box-shadow:var(--shadow);
   transition:.2s}
+.card.selected {
+  background:#f3f8ff;
+  border-color:#c8dcf8;
+  border-left:3px solid #5b8def;
+  box-shadow:none}
+.card.selected .tag {
+  background:#e3eefc;
+  color:#1967d2}
 .card.purchased {
   background:#eef9f1;
   border-color:#bfe3cb;
@@ -425,8 +433,8 @@ h1 {
   border-top:3px solid #34a853}
 
 .state.selected.on {
-  background:#e6f4ea;
-  color:#137333}
+  background:#e8f0fe;
+  color:#1967d2}
 .btn.soft {
   color:#1967d2}
 
